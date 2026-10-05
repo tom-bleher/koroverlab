@@ -1,0 +1,171 @@
+:root {
+  --bg: #F7F2E8;
+  --surface: #FFFCF5;
+  --ink: #12233B;
+  --muted: #5B6676;
+  --line: #E4DAC6;
+  --wicker: #9A5F1C;
+  --proton: #C8503C;
+  --neutron: #3B6EA5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0F1D31;
+    --surface: #17283F;
+    --ink: #F3EDE0;
+    --muted: #A9B4C3;
+    --line: #2A3D58;
+    --wicker: #E0AE66;
+    --proton: #D9634E;
+    --neutron: #4F86C2;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 1.0625rem/1.65 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 66rem; margin-inline: auto; padding-inline: 1.5rem; }
+
+h1, h2, h3, .brand { font-family: Fraunces, Georgia, serif; font-weight: 600; line-height: 1.15; }
+h1 { font-size: clamp(2.1rem, 4.6vw, 3.25rem); letter-spacing: -0.02em; margin: 0 0 1.25rem; }
+h2 { font-size: clamp(1.7rem, 3vw, 2.2rem); letter-spacing: -0.01em; margin: 0 0 1rem; }
+h3 { font-size: 1.45rem; margin: 0 0 0.75rem; }
+p { margin: 0 0 1rem; }
+sup, sub { line-height: 0; }
+
+a { color: var(--wicker); text-underline-offset: 0.2em; }
+a:hover { color: var(--proton); }
+
+/* Header */
+.site-header {
+  position: sticky; top: 0; z-index: 1;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem 1rem; flex-wrap: wrap; padding-block: 0.6rem; }
+.brand { display: flex; align-items: center; gap: 0.6rem; font-size: 1.35rem; color: var(--ink); text-decoration: none; }
+nav { display: flex; gap: 1.5rem; }
+nav a { color: var(--ink); text-decoration: none; font-size: 0.95rem; font-weight: 500; }
+nav a:hover { color: var(--wicker); }
+
+/* Sections */
+section { padding-block: 4.5rem; }
+section + section { border-top: 1px solid var(--line); }
+.section-lead { font-size: 1.2rem; color: var(--muted); max-width: 44rem; margin-bottom: 2.5rem; }
+
+.hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 29rem); align-items: center; gap: 3rem; padding-block: 4rem; }
+.eyebrow { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--wicker); }
+.lead { font-size: 1.2rem; color: var(--muted); margin: 0; }
+
+/* Reactions and inline physics notation */
+.reaction, .rx { font-family: Fraunces, Georgia, serif; font-weight: 500; }
+.reaction { color: var(--wicker); font-size: 1.1rem; margin: 0 0 0.35rem; }
+.rx { white-space: nowrap; }
+
+/* Figures */
+.defs { position: absolute; }
+.fig { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 0.75rem; padding: 1rem 1.1rem; }
+.fig svg { display: block; width: 100%; height: auto; }
+.fig figcaption { margin-top: 0.6rem; font-size: 0.875rem; line-height: 1.5; color: var(--muted); }
+.fig text { font: 500 13px Inter, system-ui, sans-serif; fill: var(--ink); }
+.fig .sym { font-style: italic; font-size: 15px; }
+.fig .sub { font-size: 10px; }
+.fig .note { font-weight: 400; font-size: 12.5px; fill: var(--muted); }
+
+.ln, .ph, .trk-p, .trk-n { fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.ln { stroke: var(--ink); }
+.ph { stroke: var(--wicker); }
+.trk-p { stroke: var(--proton); }
+.trk-n { stroke: var(--neutron); }
+.thin, .thin path { stroke-width: 1.2; }
+.dash { stroke-dasharray: 5 5; }
+.outline, .halo, .leader { fill: none; stroke: var(--muted); stroke-width: 1; }
+.outline { stroke-dasharray: 3 4; }
+.halo { stroke: var(--wicker); stroke-width: 1.4; stroke-dasharray: 4 4; }
+.blob, .det { fill: var(--line); stroke: var(--ink); stroke-width: 1.4; }
+.spark { fill: var(--wicker); }
+.nuc circle { stroke: var(--surface); stroke-width: 1.5; }
+.p, .mk-p { fill: var(--proton); }
+.n, .mk-n { fill: var(--neutron); }
+.dim .p { fill: color-mix(in srgb, var(--proton) 42%, var(--surface)); }
+.dim .n { fill: color-mix(in srgb, var(--neutron) 42%, var(--surface)); }
+.mk-ink { fill: var(--ink); }
+.mk-ph { fill: var(--wicker); }
+
+/* Research */
+.topic { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 3rem; align-items: center; }
+.topic + .topic { margin-top: 4rem; }
+.topic:nth-of-type(even) { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); }
+.topic:nth-of-type(even) .fig { order: 1; }
+.topic p:last-child { margin: 0; }
+
+/* Experiments */
+.experiments { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.experiments li { display: grid; grid-template-columns: 9.5rem minmax(0, 1fr) auto; gap: 0.25rem 2rem; padding-block: 1.1rem; border-bottom: 1px solid var(--line); }
+.experiments p { margin: 0; }
+.experiments p + p { color: var(--muted); font-size: 0.975rem; }
+.where { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 1.15rem; }
+.where small { display: block; font: 400 0.875rem Inter, system-ui, sans-serif; color: var(--muted); }
+.refs { font-size: 0.9rem; text-align: right; }
+.refs a { display: block; white-space: nowrap; }
+
+/* People */
+.pi { display: flex; gap: 1.75rem; align-items: flex-start; margin: 2rem 0 3rem; max-width: 46rem; }
+.pi img { border-radius: 50%; flex: none; object-fit: cover; }
+.pi h3 { margin-bottom: 0.25rem; }
+.pi p:last-child { margin: 0; }
+.role { color: var(--wicker); font-weight: 500; font-size: 0.95rem; }
+
+.members { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: 1.25rem 1.5rem; }
+.members li { display: flex; align-items: center; gap: 0.85rem; font-weight: 500; }
+/* Each member is a nucleon: protons and neutrons alternate. */
+.members i { flex: none; display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 50%; background: var(--proton); color: #fff; font: 600 0.85rem Inter, system-ui, sans-serif; letter-spacing: 0.03em; }
+.members li:nth-child(even) i { background: var(--neutron); }
+.members small { display: block; color: var(--muted); font-weight: 400; font-size: 0.875rem; }
+
+/* Publications */
+.pubs { list-style: none; margin: 2rem 0 1.5rem; padding: 0; }
+.pubs li { display: grid; grid-template-columns: 4rem 1fr; gap: 1rem; padding-block: 1rem; border-top: 1px solid var(--line); }
+.pubs li:first-child { border-top: 0; padding-top: 0; }
+.pubs p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+.pubs a { color: var(--ink); font-weight: 500; font-size: 1.0625rem; text-decoration: none; }
+.pubs a:hover { color: var(--wicker); text-decoration: underline; }
+.pubs b { color: var(--ink); font-weight: 500; }
+.year { font-family: Fraunces, Georgia, serif; font-weight: 600; color: var(--wicker); }
+
+/* Contact */
+.contact { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 3rem; }
+.contact p { max-width: 38rem; }
+dl { display: grid; grid-template-columns: 5rem 1fr; gap: 0.6rem 1rem; margin: 1.5rem 0 0; }
+dt { color: var(--muted); }
+dd { margin: 0; }
+
+.site-footer { border-top: 1px solid var(--line); padding-block: 2rem; color: var(--muted); font-size: 0.9rem; }
+.site-footer .wrap { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.site-footer p { margin: 0; }
+
+@media (max-width: 52rem) {
+  section, .hero { padding-block: 3rem; }
+  .hero, .contact, .topic, .topic:nth-of-type(even) { grid-template-columns: minmax(0, 1fr); gap: 1.75rem; }
+  .topic:nth-of-type(even) .fig { order: 0; }
+  .topic + .topic { margin-top: 3rem; }
+  .experiments li { grid-template-columns: minmax(0, 1fr); }
+  .where small { display: inline; margin-left: 0.5rem; }
+  .refs { text-align: left; }
+  .refs a { display: inline; margin-right: 1rem; }
+  .contact img { width: 9rem; height: auto; }
+  .pi { flex-direction: column; gap: 1rem; }
+  nav { gap: 0.25rem 1.1rem; flex-wrap: wrap; }
+  .pubs li { grid-template-columns: 1fr; gap: 0.15rem; }
+}

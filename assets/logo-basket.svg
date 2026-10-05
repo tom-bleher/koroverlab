@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Korover Lab: a woven basket holding a nucleus">
+  <defs>
+    <clipPath id="bowl"><path d="M19 64C19 94 36 111 60 111C84 111 101 94 101 64Z"/></clipPath>
+    <clipPath id="rim"><rect x="13" y="57" width="94" height="11.5" rx="5.75"/></clipPath>
+  </defs>
+  <!-- handle, wrapped -->
+  <path d="M26 63C26 -4 94 -4 94 63" fill="none" stroke="#B97A2E" stroke-width="6.5"/>
+  <path d="M26 63C26 -4 94 -4 94 63" fill="none" stroke="#E3B26A" stroke-width="6.5" stroke-dasharray="2 5.5"/>
+  <!-- nucleus: three protons and four neutrons -->
+  <g stroke-width=".9">
+    <g fill="#3B6EA5" stroke="#2B5484"><circle cx="46.1" cy="38" r="9.5"/><circle cx="73.9" cy="38" r="9.5"/><circle cx="60" cy="62" r="9.5"/></g>
+    <g fill="#C8503C" stroke="#A53C2B"><circle cx="60" cy="30" r="9.5"/><circle cx="46.1" cy="54" r="9.5"/><circle cx="73.9" cy="54" r="9.5"/></g>
+    <circle cx="60" cy="46" r="9.5" fill="#3B6EA5" stroke="#2B5484"/>
+  </g>
+  <g fill="#fff" opacity=".38">
+    <circle cx="42.9" cy="34.4" r="2.7"/><circle cx="70.7" cy="34.4" r="2.7"/><circle cx="56.8" cy="26.4" r="2.7"/>
+    <circle cx="42.9" cy="50.4" r="2.7"/><circle cx="70.7" cy="50.4" r="2.7"/><circle cx="56.8" cy="42.4" r="2.7"/>
+  </g>
+  <!-- basket -->
+  <path d="M19 64C19 94 36 111 60 111C84 111 101 94 101 64Z" fill="#8C5418"/>
+  <g clip-path="url(#bowl)" fill="none" stroke="#E3B26A" stroke-width="6" stroke-linecap="round" stroke-dasharray="7 10">
+    <path d="M12 74Q60 81 108 74"/>
+    <path d="M12 82.5Q60 89.5 108 82.5" stroke-dashoffset="8.5"/>
+    <path d="M12 91Q60 98 108 91"/>
+    <path d="M12 99.5Q60 106.5 108 99.5" stroke-dashoffset="8.5"/>
+    <path d="M12 108Q60 115 108 108"/>
+  </g>
+  <rect x="13" y="57" width="94" height="11.5" rx="5.75" fill="#C98A3C"/>
+  <g clip-path="url(#rim)"><path d="M0 62.75H130" transform="translate(33.4 0) skewX(-28)" fill="none" stroke="#A9691F" stroke-width="11.5" stroke-dasharray="2.2 4.6"/></g>
+</svg>

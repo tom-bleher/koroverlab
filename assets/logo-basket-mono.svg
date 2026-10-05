@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Korover Lab: a woven basket holding a nucleus" color="#12233B">
+  <defs>
+    <!-- white prints, black is knocked out; neutrons are hollow, protons solid -->
+    <mask id="ink">
+      <g fill="none" stroke="#fff" stroke-width="6.5">
+        <path d="M26 63C26 -4 94 -4 94 63"/>
+      </g>
+      <g fill="#fff" stroke="#000" stroke-width="2">
+        <circle cx="46.1" cy="38" r="9.5"/><circle cx="73.9" cy="38" r="9.5"/><circle cx="60" cy="62" r="9.5"/>
+        <circle cx="60" cy="30" r="9.5"/><circle cx="46.1" cy="54" r="9.5"/><circle cx="73.9" cy="54" r="9.5"/>
+        <circle cx="60" cy="46" r="9.5"/>
+      </g>
+      <g fill="#000"><circle cx="46.1" cy="38" r="5.2"/><circle cx="73.9" cy="38" r="5.2"/><circle cx="60" cy="46" r="5.2"/></g>
+      <g fill="#fff" stroke="#000" stroke-width="2">
+        <circle cx="60" cy="30" r="9.5"/><circle cx="46.1" cy="54" r="9.5"/><circle cx="73.9" cy="54" r="9.5"/>
+      </g>
+      <g fill="#fff" stroke="#000" stroke-width="2"><circle cx="60" cy="46" r="9.5"/></g>
+      <circle cx="60" cy="46" r="5.2" fill="#000"/>
+      <path d="M19 64C19 94 36 111 60 111C84 111 101 94 101 64Z" fill="#fff"/>
+      <g fill="none" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-dasharray="7 10">
+        <path d="M12 74.5Q60 81.5 108 74.5"/>
+        <path d="M12 83Q60 90 108 83" stroke-dashoffset="8.5"/>
+        <path d="M12 91.5Q60 98.5 108 91.5"/>
+        <path d="M12 100Q60 107 108 100" stroke-dashoffset="8.5"/>
+        <path d="M12 108.5Q60 115.5 108 108.5"/>
+      </g>
+      <rect x="11.5" y="55.5" width="97" height="14.5" rx="7" fill="#000"/>
+      <rect x="13" y="57" width="94" height="11.5" rx="5.75" fill="#fff"/>
+    </mask>
+  </defs>
+  <rect width="120" height="120" fill="currentColor" mask="url(#ink)"/>
+</svg>
