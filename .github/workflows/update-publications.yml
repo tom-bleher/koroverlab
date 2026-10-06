@@ -21,8 +21,8 @@ jobs:
           python3 scripts/update_publications.py
       - name: Commit if the list changed
         run: |
-          git diff --quiet index.html && exit 0
+          git diff --quiet publications.html && exit 0
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update publication list from Google Scholar" index.html
+          git commit -m "Update publication list from Google Scholar" publications.html
           git push

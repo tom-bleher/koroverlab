@@ -4,423 +4,120 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Korover Lab · Nuclear Physics at Tel Aviv University</title>
-  <meta name="description" content="Experimental nuclear physics group at Tel Aviv University. We study short-range correlations, nucleon structure and the nuclear medium with high-energy electron scattering at Jefferson Lab and the Electron-Ion Collider.">
-  <link rel="icon" type="image/svg+xml" href="assets/logo-basket.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&amp;family=Inter:ital,wght@0,400;0,500;0,600;1,500&amp;display=swap">
+  <meta name="description" content="Korover Lab at Tel Aviv University: experimental nuclear physics with electron scattering at Jefferson Lab and the Electron-Ion Collider.">
+  <link rel="canonical" href="https://tom-bleher.github.io/koroverlab/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Korover Lab">
+  <meta property="og:title" content="Korover Lab · Nuclear Physics at Tel Aviv University">
+  <meta property="og:description" content="Korover Lab at Tel Aviv University: experimental nuclear physics with electron scattering at Jefferson Lab and the Electron-Ion Collider.">
+  <meta property="og:url" content="https://tom-bleher.github.io/koroverlab/">
+  <meta property="og:image" content="https://tom-bleher.github.io/koroverlab/assets/images/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="animations.css">
 </head>
 <body>
 
-<!-- Arrowheads shared by all figures -->
-<svg class="defs" width="0" height="0" aria-hidden="true">
-  <defs>
-    <marker id="a-ink" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path class="mk-ink" d="M0 1.2 9 5 0 8.8z"/></marker>
-    <marker id="a-p" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path class="mk-p" d="M0 1.2 9 5 0 8.8z"/></marker>
-    <marker id="a-n" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path class="mk-n" d="M0 1.2 9 5 0 8.8z"/></marker>
-    <marker id="a-ph" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path class="mk-ph" d="M0 1.2 9 5 0 8.8z"/></marker>
-  </defs>
-</svg>
-
-<header class="site-header">
+<header class="masthead">
   <div class="wrap">
-    <a class="brand" href="#top">
-      <img src="assets/logo-basket.svg" alt="" width="40" height="40">
-      <span>Korover Lab</span>
-    </a>
-    <nav>
-      <a href="#research">Research</a>
-      <a href="#experiments">Experiments</a>
-      <a href="#people">People</a>
-      <a href="#publications">Publications</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <a href="index.html"><img src="assets/images/logo.jpg" alt="Korover Lab, home" width="174" height="174"></a>
+    <div>
+      <p class="site-title">Korover Lab</p>
+      <p class="tagline">Experimental Nuclear Physics @ Tel Aviv University</p>
+    </div>
+    <img class="emblem" src="assets/images/masthead-pair.jpg" alt="" width="174" height="174" loading="lazy">
   </div>
 </header>
 
-<main id="top">
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="people.html">People</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="press.html">Press</a>
+    <a href="join.html">Join Us</a>
+    <a href="contact.html">Contact us</a>
+  </div>
+</nav>
 
-  <section class="hero wrap">
-    <div>
-      <p class="eyebrow">Experimental nuclear physics · Tel Aviv University</p>
-      <h1>Probing nucleons and nuclei with high-energy electrons</h1>
-      <p class="lead">We study how quarks and gluons build protons and neutrons, and what happens when two nucleons overlap inside a nucleus: at Jefferson Lab today, and at the Electron-Ion Collider next.</p>
-    </div>
-
-    <figure class="fig">
-      <svg viewBox="0 0 440 330" role="img" aria-label="An electron scatters from a nucleus and knocks a proton out of a short-range correlated proton-neutron pair. The partner neutron recoils opposite to the proton's initial momentum.">
-        <path class="trk-n" d="M205 191 188 306" marker-end="url(#a-n)"/>
-        <g class="nuc dim">
-          <circle class="n" cx="238.5" cy="147" r="17"/><circle class="p" cx="271.5" cy="147" r="17"/>
-          <circle class="n" cx="255" cy="175.6" r="17"/><circle class="p" cx="288" cy="175.6" r="17"/>
-          <circle class="p" cx="238.5" cy="204.2" r="17"/><circle class="n" cx="271.5" cy="204.2" r="17"/><circle class="p" cx="304.5" cy="204.2" r="17"/>
-          <circle class="n" cx="222" cy="232.8" r="17"/><circle class="p" cx="255" cy="232.8" r="17"/><circle class="n" cx="288" cy="232.8" r="17"/>
-        </g>
-        <path class="trk-p" d="M217 173 420 290" marker-end="url(#a-p)"/>
-        <g class="nuc"><circle class="n k-n" cx="205" cy="191" r="17"/><circle class="p k-p" cx="217" cy="173" r="17"/></g>
-        <circle class="halo k-halo" cx="211" cy="182" r="32"/>
-        <polyline class="ln" points="10,70 61,83 112,96" marker-mid="url(#a-ink)"/>
-        <path class="ln" d="M112 96 300 22" marker-end="url(#a-ink)"/>
-        <path class="ph k-ph" d="M112 96q3.2 9.1 12.8 9.4t12.8 9.4t12.8 9.4t12.8 9.4t12.8 9.4t12.8 9.4t12.8 9.4"/>
-        <circle class="mv dot-e k-e" r="5"/>
-        <text class="sym" x="8" y="60">e</text>
-        <text class="sym" x="308" y="26">e′</text>
-        <text class="sym" x="146" y="150" text-anchor="middle">γ*</text>
-        <text class="note" x="172" y="196" text-anchor="end">correlated pair</text>
-        <text class="sym" x="428" y="302">p</text>
-        <text class="note" x="434" y="322" text-anchor="end">knocked-out proton</text>
-        <text class="sym" x="166" y="307">n</text>
-        <text class="note" x="180" y="325" text-anchor="end">recoil partner</text>
-      </svg>
-      <figcaption>The <span class="rx"><i>A</i>(<i>e</i>,<i>e′pN</i>)</span> reaction. An electron knocks a proton out of a short-range correlated pair and its partner recoils. Detecting all three particles in coincidence identifies the pair.</figcaption>
+<main>
+  <div class="wrap intro">
+    <figure class="slides">
+      <div class="frame">
+        <img class="on" src="assets/images/cebaf-aerial.jpg" alt="Jefferson Lab from the air" width="720" height="480" fetchpriority="high">
+        <template>
+          <img src="assets/images/hall-a.jpg" alt="Hall A at Jefferson Lab" width="720" height="480" aria-hidden="true">
+          <img src="assets/images/clas12.jpg" alt="The CLAS12 detector in Hall B" width="720" height="480" aria-hidden="true">
+          <img src="assets/images/hall-c.jpg" alt="The spectrometers of Hall C" width="720" height="480" aria-hidden="true">
+          <img src="assets/images/gluex.jpg" alt="The GlueX detector in Hall D" width="720" height="480" aria-hidden="true">
+          <img src="assets/images/eic-aerial.jpg" alt="The Electron-Ion Collider complex at Brookhaven" width="720" height="480" aria-hidden="true">
+          <img src="assets/images/eic-tunnel.jpg" alt="Cutaway rendering of the Electron-Ion Collider tunnel" width="720" height="480" aria-hidden="true">
+          <img src="assets/images/epic-model.jpg" alt="A model of the ePIC detector for the Electron-Ion Collider" width="720" height="480" aria-hidden="true">
+        </template>
+      </div>
+      <figcaption>
+        <button type="button" class="toggle">Pause</button>
+        <button type="button" class="next"><span class="sr-only">Next picture. Showing </span><span class="count">1/8</span></button>
+      </figcaption>
     </figure>
-  </section>
-
-  <section id="research" class="wrap">
-    <h2>Research</h2>
-    <p class="section-lead">Nuclei are made of protons and neutrons, which are made of quarks and gluons. Electron scattering lets us study both levels at once: how a nucleon is built, and how it changes inside a nucleus.</p>
-
-    <article class="topic">
-      <figure class="fig">
-        <svg viewBox="0 0 360 230" role="img" aria-label="A nucleus in which most nucleons carry small momenta, while one overlapping proton-neutron pair carries large, back-to-back momenta.">
-          <circle class="outline" cx="120" cy="116" r="92"/>
-          <g class="ln thin s-mf">
-            <path d="M183.4 86.4l-18 -16" marker-end="url(#a-ink)"/><path d="M187.7 121.9l-20 13" marker-end="url(#a-ink)"/>
-            <path d="M174.1 153.9l-23 -6" marker-end="url(#a-ink)"/><path d="M149.6 179.4l-6 -23" marker-end="url(#a-ink)"/>
-            <path d="M114.2 181.7l2 -24" marker-end="url(#a-ink)"/><path d="M58.4 144.7l20 -13" marker-end="url(#a-ink)"/>
-            <path d="M56.2 110.4l6 -23" marker-end="url(#a-ink)"/><path d="M70.5 66.5l22 9" marker-end="url(#a-ink)"/>
-            <path d="M114.2 50.3l22 8" marker-end="url(#a-ink)"/>
-          </g>
-          <g class="nuc dim s-sea">
-            <circle class="n" cx="183.4" cy="86.4" r="10"/><circle class="p" cx="187.7" cy="121.9" r="10"/><circle class="n" cx="174.1" cy="153.9" r="10"/>
-            <circle class="p" cx="149.6" cy="179.4" r="10"/><circle class="n" cx="114.2" cy="181.7" r="10"/><circle class="p" cx="58.4" cy="144.7" r="10"/>
-            <circle class="n" cx="56.2" cy="110.4" r="10"/><circle class="p" cx="70.5" cy="66.5" r="10"/><circle class="n" cx="114.2" cy="50.3" r="10"/>
-          </g>
-          <g class="s-mom">
-            <path class="trk-p" d="M113 110.5 169.9 38.2" marker-end="url(#a-p)"/>
-            <path class="trk-n" d="M127 121.5 70.1 193.8" marker-end="url(#a-n)"/>
-          </g>
-          <circle class="halo s-halo" cx="120" cy="116" r="23"/>
-          <g class="nuc"><circle class="n s-n" cx="127" cy="121.5" r="11"/><circle class="p s-p" cx="113" cy="110.5" r="11"/></g>
-          <text x="180" y="40"><tspan class="sym">k</tspan> &gt; <tspan class="sym">k</tspan><tspan class="sub" dy="4">F</tspan></text>
-          <text class="note" x="180" y="58">correlated pair</text>
-          <path class="leader" d="M201 122H222"/>
-          <text x="226" y="126"><tspan class="sym">k</tspan> &lt; <tspan class="sym">k</tspan><tspan class="sub" dy="4">F</tspan></text>
-          <text class="note" x="226" y="144">mean-field nucleons</text>
-        </svg>
-        <figcaption>Mean-field nucleons move slowly. When two nucleons come close they swing around each other with large, nearly back-to-back momenta, above the Fermi momentum <span class="rx"><i>k</i><sub>F</sub></span>, while their centre of mass barely moves.</figcaption>
-      </figure>
-      <div>
-        <p class="reaction"><i>A</i>(<i>e</i>,<i>e′pN</i>)</p>
-        <h3>Short-range correlations</h3>
-        <p>Most nucleons in a nucleus move independently in the average field of their neighbours. Now and then two of them come close enough to overlap and form a short-range correlated pair, with a relative momentum above the Fermi momentum, <span class="rx"><i>k</i><sub>F</sub></span> ≈ 250 MeV/<i>c</i>, and a small centre-of-mass momentum.</p>
-        <p>We break such pairs apart and detect both nucleons. The mix of <i>pn</i>, <i>pp</i> and <i>nn</i> pairs, and how it changes with momentum, maps the nucleon–nucleon interaction at short distance. Neutron–proton pairs dominate around 400 MeV/<i>c</i>, where the tensor force rules. Towards 800 MeV/<i>c</i> that dominance fades and the ratio of proton–proton to neutron–proton pairs rises, as expected when the tensor force gives way to an isospin-independent repulsive core (<a href="https://arxiv.org/abs/1401.6138">PRL 113, 022501</a>; <a href="https://arxiv.org/abs/2004.07304">PLB 820, 136523</a>).</p>
-        <p>We also ask which nucleons pair up in the first place. Recent data point to nuclear shell structure (<a href="https://arxiv.org/abs/2606.07754">arXiv:2606.07754</a>), and we model pair abundances with shell-model wave functions (<a href="https://arxiv.org/abs/2512.14447">PRC 114, 034002</a>).</p>
-      </div>
-    </article>
-
-    <article class="topic">
-      <figure class="fig">
-        <svg viewBox="0 0 360 230" role="img" aria-label="An electron scatters deep-inelastically from one nucleon of a deuteron, which breaks up; the other nucleon, the spectator, recoils backward into a tagging detector.">
-          <rect class="det t-det" x="30" y="108" width="14" height="90" rx="3"/>
-          <path class="trk-p" d="M184 142 56 153" marker-end="url(#a-p)"/>
-          <g class="ln thin">
-            <path d="M231.2 133.5 312 156.7" marker-end="url(#a-ink)"/><path d="M229.1 138.3 301.1 181.6" marker-end="url(#a-ink)"/>
-            <path d="M226.1 142.1 285.5 201.5" marker-end="url(#a-ink)"/><path d="M222 145.3 260 211.1" marker-end="url(#a-ink)"/>
-          </g>
-          <g class="nuc"><circle class="p t-spec" cx="184" cy="142" r="15"/><circle class="n t-struck" cx="212" cy="128" r="15"/></g>
-          <polyline class="ln" points="12,54 81,67 150,80" marker-mid="url(#a-ink)"/>
-          <path class="ln" d="M150 80 326 32" marker-end="url(#a-ink)"/>
-          <path class="ph t-ph" d="M150 80q2.1 7.3 9.7 7.5t9.7 7.5t9.7 7.5t9.7 7.5t9.7 7.5"/>
-          <circle class="mv dot-e t-e" r="4.5"/>
-          <g class="t-x"><circle class="mv dot-e" r="3"/><circle class="mv dot-e" r="3"/><circle class="mv dot-e" r="3"/><circle class="mv dot-e" r="3"/></g>
-          <text class="sym" x="10" y="44">e</text>
-          <text class="sym" x="334" y="34">e′</text>
-          <text class="sym" x="160" y="118" text-anchor="middle">γ*</text>
-          <text class="sym" x="306" y="206">X</text>
-          <text x="108" y="138"><tspan class="sym">p</tspan><tspan class="sub" dy="4">s</tspan></text>
-          <text class="note" x="112" y="174" text-anchor="middle">spectator</text>
-          <text class="note" x="190" y="186" text-anchor="middle">deuteron</text>
-          <text class="note" x="12" y="218">tagging detector</text>
-        </svg>
-        <figcaption>Tagged deep inelastic scattering on deuterium. The electron shatters one nucleon while the spectator recoils backward into a dedicated detector; its momentum tells us how far off-shell the struck nucleon was.</figcaption>
-      </figure>
-      <div>
-        <p class="reaction"><i>d</i>(<i>e</i>,<i>e′N</i><sub>s</sub>)<i>X</i></p>
-        <h3>Nucleons in the nuclear medium</h3>
-        <p>A nucleon bound in a nucleus is not quite a free nucleon. Deep inelastic scattering shows that its quark distributions are modified, the EMC effect, and decades later the origin of the effect is still debated. One leading idea ties it to short-range correlated pairs: brief, dense fluctuations in which the internal structure of the nucleons changes (<a href="https://arxiv.org/abs/1611.09748">RMP 89, 045002</a>; <a href="https://arxiv.org/abs/2004.12065">Nature 566, 354</a>).</p>
-        <p>We test this with tagged deep inelastic scattering on deuterium, where a backward-going spectator nucleon reveals, event by event, how deeply bound the struck nucleon was. Gluons come next: their behaviour at large <i>x</i> inside nuclei is almost unknown, and an approved Jefferson Lab experiment, with Igor among its spokespersons, will probe it through J/ψ photoproduction near threshold (<a href="https://arxiv.org/abs/2510.22076">arXiv:2510.22076</a>).</p>
-      </div>
-    </article>
-
-    <article class="topic">
-      <figure class="fig">
-        <svg viewBox="0 0 360 230" role="img" aria-label="The handbag diagram of deeply virtual Compton scattering: a quark in the proton absorbs a virtual photon from the electron, emits a real photon and returns to the proton.">
-          <ellipse class="blob" cx="200" cy="180" rx="74" ry="18"/>
-          <polyline class="ln" points="26,180 76,180 126,180" marker-mid="url(#a-ink)"/>
-          <path class="ln" d="M274 180H336" marker-end="url(#a-ink)"/>
-          <polyline class="ln" points="148,167 158,139.5 168,112" marker-mid="url(#a-ink)"/>
-          <polyline class="ln" points="168,112 200,112 232,112" marker-mid="url(#a-ink)"/>
-          <polyline class="ln" points="232,112 242,139.5 252,167" marker-mid="url(#a-ink)"/>
-          <polyline class="ln" points="14,34 72,48 130,62" marker-mid="url(#a-ink)"/>
-          <path class="ln" d="M130 62 226 26" marker-end="url(#a-ink)"/>
-          <path class="ph" d="M130 62q0.2 7.7 7.6 10t7.6 10t7.6 10t7.6 10t7.6 10"/>
-          <path class="ph" d="M232 112q7.8 1.1 11.4 -5.9t11.4 -5.9t11.4 -5.9t11.4 -5.9t11.4 -5.9t11.4 -5.9t11.4 -5.9l7.1 -3.6" marker-end="url(#a-ph)"/>
-          <circle class="mv dot-e d-e" r="4.5"/>
-          <circle class="mv p d-p" r="6"/>
-          <circle class="mv dot-ph d-gs" r="4"/>
-          <circle class="mv dot-e d-q" r="3.5"/>
-          <circle class="mv dot-ph d-g" r="4"/>
-          <circle class="mv p d-p2" r="6"/>
-          <text class="sym" x="10" y="24">e</text>
-          <text class="sym" x="234" y="26">e′</text>
-          <text class="sym" x="138" y="100" text-anchor="end">γ*</text>
-          <text class="sym" x="328" y="64">γ</text>
-          <text class="sym" x="26" y="168">p</text>
-          <text class="sym" x="322" y="168">p′</text>
-          <text class="sym" x="146" y="142" text-anchor="end">x + ξ</text>
-          <text class="sym" x="256" y="142">x − ξ</text>
-          <text x="200" y="185" text-anchor="middle">GPDs</text>
-        </svg>
-        <figcaption>Deeply virtual Compton scattering. A quark absorbs the virtual photon, radiates a real one and returns to the proton, which stays intact. The process is described by generalized parton distributions (GPDs).</figcaption>
-      </figure>
-      <div>
-        <p class="reaction"><i>ep</i> → <i>e′p′γ</i></p>
-        <h3>The nucleon in three dimensions</h3>
-        <p>Elastic scattering shows where the charge sits inside a nucleon, and deep inelastic scattering shows how its quarks share its momentum. Deeply virtual exclusive processes, in which the electron produces a real photon or a meson and leaves the nucleon intact, connect the two through generalized parton distributions, which relate the longitudinal momentum of a quark to its position in the transverse plane.</p>
-        <p>Our work here includes deeply virtual Compton scattering measurements, among them one on the neutron (<a href="https://arxiv.org/abs/2109.02076">Nature Phys. 16, 191</a>), and a reanalysis of published CLAS π<sup>0</sup> data that separates the longitudinal and transverse cross sections, a test of the factorization on which this picture rests (<a href="https://arxiv.org/abs/2103.00611">arXiv:2103.00611</a>).</p>
-      </div>
-    </article>
-
-    <article class="topic">
-      <figure class="fig">
-        <svg viewBox="0 0 360 190" role="img" aria-label="Schematic of an electron-ion collision: an ion beam from the left and an electron beam from the right collide inside a central detector; nuclear fragments continue into far-forward detectors.">
-          <rect class="ln" x="100" y="28" width="140" height="120" rx="12"/>
-          <rect class="outline" x="118" y="44" width="104" height="88" rx="8"/>
-          <rect class="outline" x="140" y="64" width="60" height="48" rx="6"/>
-          <g class="ph thin e-trk"><path pathLength="1" d="M170 88q20 -22 46 -28"/><path pathLength="1" d="M170 88q-12 -24 -30 -34"/><path pathLength="1" d="M170 88q16 22 34 30"/><path pathLength="1" d="M170 88q-22 10 -40 32"/></g>
-          <polyline class="trk-p" points="12,88 80,88 164,88" marker-mid="url(#a-p)"/>
-          <path class="trk-p dash" d="M176 88H296"/>
-          <polyline class="ln" points="348,64 286,72.5 177,87" marker-mid="url(#a-ink)"/>
-          <rect class="det e-det" x="296" y="78" width="10" height="20" rx="2"/>
-          <rect class="det e-det" x="318" y="78" width="10" height="20" rx="2"/>
-          <g class="mv e-ion"><circle class="p" cx="-4" r="4"/><circle class="n" cx="3" cy="-3.6" r="4"/><circle class="p" cx="3" cy="3.6" r="4"/></g>
-          <circle class="mv dot-e e-el" r="4"/>
-          <circle class="mv p e-f1" r="3.6"/>
-          <circle class="mv n e-f2" r="3.6"/>
-          <circle class="spark e-spark" cx="170" cy="88" r="4.5"/>
-          <path class="leader" d="M312 102V156"/>
-          <text class="sym" x="12" y="76">p, A</text>
-          <text class="sym" x="338" y="56">e</text>
-          <text class="note" x="170" y="18" text-anchor="middle">central detector</text>
-          <text class="note" x="350" y="172" text-anchor="end">far-forward detectors</text>
-        </svg>
-        <figcaption>At the Electron-Ion Collider the nucleus is itself a beam, so its fragments keep travelling forward at high momentum and can be caught in detectors along the beamline.</figcaption>
-      </figure>
-      <div>
-        <p class="reaction"><i>e</i> + <i>p</i>, <i>e</i> + <i>A</i></p>
-        <h3>The Electron-Ion Collider</h3>
-        <p>The Electron-Ion Collider at Brookhaven National Laboratory will collide electrons with protons and nuclei to image the quarks and gluons inside them. For our physics, a collider changes the game: spectators and recoiling nucleons, which are slow and hard to catch in a fixed target, emerge boosted to high momentum (<a href="https://arxiv.org/abs/2109.09509">PRC 105, 034001</a>).</p>
-        <p>We take part in designing the detectors and the measurements, starting with the ECCE detector concept (<a href="https://arxiv.org/abs/2209.02580">NIM A 1073, 170240</a>) and its exclusive, diffractive and tagging programme (<a href="https://arxiv.org/abs/2208.14575">NIM A 1052, 168238</a>).</p>
-      </div>
-    </article>
-  </section>
-
-  <section id="experiments" class="wrap">
-    <h2>Experiments</h2>
-    <p class="section-lead">Jefferson Lab's CEBAF accelerator delivers electron beams of up to 11 GeV to Halls A, B and C, and 12 GeV to Hall D. Our experiments span all four.</p>
-    <ul class="experiments">
-      <li>
-        <div class="where">Hall A</div>
-        <div>
-          <p class="reaction"><sup>4</sup>He(<i>e</i>,<i>e′pN</i>)</p>
-          <p>Triple-coincidence measurement of <i>pn</i> and <i>pp</i> pairs at missing momenta of 400–830 MeV/<i>c</i>, where the nucleon–nucleon force turns from tensor to repulsive.</p>
-        </div>
-        <div class="refs"><a href="https://arxiv.org/abs/1401.6138">PRL 113, 022501</a></div>
-      </li>
-      <li>
-        <div class="where">Hall B <small>CLAS</small></div>
-        <div>
-          <p class="reaction"><sup>12</sup>C(<i>e</i>,<i>e′pN</i>), <i>A</i>(<i>e</i>,<i>e′p</i>)</p>
-          <p>Pair break-up up to 1000 MeV/<i>c</i>, across the tensor-to-scalar transition, and cross-section ratios that show correlated pairs taking over above roughly 350 MeV/<i>c</i>.</p>
-        </div>
-        <div class="refs"><a href="https://arxiv.org/abs/2004.07304">PLB 820, 136523</a><a href="https://arxiv.org/abs/2209.01492">PRC 107, L061301</a></div>
-      </li>
-      <li>
-        <div class="where">Hall B <small>CLAS12 + BAND</small></div>
-        <div>
-          <p class="reaction"><i>d</i>(<i>e</i>,<i>e′n</i><sub>s</sub>)<i>X</i></p>
-          <p>The Backward Angle Neutron Detector tags spectator neutrons emitted at 155°–175° with momenta of 200–600 MeV/<i>c</i>.</p>
-        </div>
-        <div class="refs"><a href="https://arxiv.org/abs/2004.10339">NIM A 978, 164356</a></div>
-      </li>
-      <li>
-        <div class="where">Hall C <small>SHMS + HMS</small></div>
-        <div>
-          <p class="reaction"><i>A</i>(<i>e</i>,<i>e′p</i>)</p>
-          <p>High-missing-momentum protons knocked out of nuclei from <sup>9</sup>Be to <sup>197</sup>Au with a 10.5 GeV beam, to learn how pairing depends on mass, neutron excess and shell structure.</p>
-        </div>
-        <div class="refs"><a href="https://arxiv.org/abs/2606.07754">arXiv:2606.07754</a></div>
-      </li>
-      <li>
-        <div class="where">Hall C <small>LAD</small></div>
-        <div>
-          <p class="reaction"><i>d</i>(<i>e</i>,<i>e′p</i><sub>s</sub>)<i>X</i></p>
-          <p>The Large Acceptance Detector tags backward-going spectator protons, to measure how the structure of a high-momentum, highly virtual neutron is modified.</p>
-        </div>
-        <div class="refs"><a href="https://doi.org/10.1140/epja/s10050-024-01356-w">EPJA 60, 201</a></div>
-      </li>
-      <li>
-        <div class="where">Hall D <small>GlueX</small></div>
-        <div>
-          <p class="reaction"><i>γ</i> <sup>4</sup>He → <i>J/ψ X</i></p>
-          <p>Approved experiment, with Igor among its spokespersons, to measure J/ψ photoproduction at and below threshold: a first stringent test of how gluons behave inside bound nucleons.</p>
-        </div>
-        <div class="refs"><a href="https://arxiv.org/abs/2510.22076">E12-25-002</a></div>
-      </li>
-    </ul>
-  </section>
-
-  <section id="people" class="wrap">
-    <h2>People</h2>
-
-    <div class="pi">
-      <img src="assets/igor-korover.jpg" alt="Dr. Igor Korover" width="120" height="120">
-      <div>
-        <h3>Dr. Igor Korover</h3>
-        <p class="role">Principal investigator · Senior Lecturer</p>
-        <p>Igor joined the School of Physics and Astronomy at Tel Aviv University in 2024. He was previously a senior postdoctoral fellow at MIT and a researcher at the Nuclear Research Center Negev. He holds a PhD from Tel Aviv University (2015), an MSc from Ben-Gurion University of the Negev (2009) and a BSc from the Technion (2003), and was a Katzir Scholar from 2015 to 2021.</p>
-        <p><a href="https://www.linkedin.com/in/igor-korover-88603567/">LinkedIn</a> · <a href="https://english.tau.ac.il/profile/igorkoro">University profile</a> · <a href="https://inspirehep.net/literature?q=a%20Korover%2C%20I&amp;sort=mostrecent">INSPIRE</a></p>
-      </div>
-    </div>
-
-    <!-- To give a member a role, add <small>Role</small> after the name. -->
-    <ul class="members">
-      <li><i>EP</i><span>Eli Piasetzky <small>Professor Emeritus</small></span></li>
-      <li><i>NA</i><span>Nitzan Alaluf</span></li>
-      <li><i>TB</i><span>Tom Bleher</span></li>
-      <li><i>EC</i><span>Erez Cohen</span></li>
-      <li><i>AM</i><span>Avishay Mizrahi <small>Mechanical engineer</small></span></li>
-      <li><i>IP</i><span>Igor Parshkin</span></li>
-      <li><i>YS</i><span>Yuval Shalom Moalem</span></li>
-      <li><i>RW</i><span>Ron Wagner</span></li>
-      <li><i>IW</i><span>Ilay Wischnevsky Shlush</span></li>
-      <li><i>SY</i><span>Shai Yakobovich</span></li>
-    </ul>
-  </section>
-
-  <section id="publications" class="wrap">
-    <h2>Publications</h2>
-    <!-- publications:start (rewritten by scripts/update_publications.py) -->
-    <ol class="pubs">
-      <li>
-        <span class="year">2026</span>
-        <p><a href="https://arxiv.org/abs/2609.36733">Short-range correlated pairs from nucleon density profiles as a new probe of the nuclear equation of state</a><br>
-        L. Ponnath, N. Barnea, <b>I. Korover</b>, S. Paschalis, M. Petri, <b>E. Piasetzky</b>, X. Roca-Maza, S. Typel, <b>I. Wischnevsky Shlush</b> · arXiv:2609.36733</p>
-      </li>
-      <li>
-        <span class="year">2026</span>
-        <p><a href="https://arxiv.org/abs/2606.07754">Short-range correlated pair formation and nuclear shell structure</a><br>
-        D. Nguyen <i>et al.</i> · arXiv:2606.07754</p>
-      </li>
-      <li>
-        <span class="year">2026</span>
-        <p><a href="https://arxiv.org/abs/2512.14447">Modeling short-range nucleon pair and triplet abundances in atomic nuclei</a><br>
-        <b>I. Wischnevsky Shlush</b>, A. Denniston, <b>R. Wagner</b>, <b>I. Korover</b>, <b>E. Piasetzky</b> · Phys. Rev. C 114, 034002</p>
-      </li>
-      <li>
-        <span class="year">2026</span>
-        <p><a href="https://arxiv.org/abs/2601.09568">Long range outlook for short-range correlations</a><br>
-        N. Fomin <i>et al.</i> · arXiv:2601.09568</p>
-      </li>
-      <li>
-        <span class="year">2025</span>
-        <p><a href="https://arxiv.org/abs/2510.22076">Threshold J/ψ photoproduction as a probe of nuclear gluon structure</a><br>
-        J. R. Pybus <i>et al.</i> · Jefferson Lab experiment E12-25-002, arXiv:2510.22076</p>
-      </li>
-      <li>
-        <span class="year">2025</span>
-        <p><a href="https://arxiv.org/abs/2209.02580">Design of the ECCE detector for the Electron Ion Collider</a><br>
-        J. K. Adkins <i>et al.</i> · Nucl. Instrum. Meth. A 1073, 170240</p>
-      </li>
-      <li>
-        <span class="year">2024</span>
-        <p><a href="https://doi.org/10.1140/epja/s10050-024-01356-w">Tagged deep inelastic scattering measurement on deuterium with the LAD experiment</a><br>
-        F. Hauenstein <i>et al.</i> · Eur. Phys. J. A 60, 201</p>
-      </li>
-      <li>
-        <span class="year">2023</span>
-        <p><a href="https://arxiv.org/abs/2209.01492">Observation of large missing-momentum (<i>e</i>,<i>e′p</i>) cross-section scaling and the onset of correlated-pair dominance in nuclei</a><br>
-        <b>I. Korover</b> <i>et al.</i> (CLAS Collaboration) · Phys. Rev. C 107, L061301</p>
-      </li>
-      <li>
-        <span class="year">2021</span>
-        <p><a href="https://arxiv.org/abs/2004.07304"><sup>12</sup>C(<i>e</i>,<i>e′pN</i>) measurements of short range correlations in the tensor-to-scalar interaction transition region</a><br>
-        <b>I. Korover</b> <i>et al.</i> (CLAS Collaboration) · Phys. Lett. B 820, 136523</p>
-      </li>
-      <li>
-        <span class="year">2021</span>
-        <p><a href="https://arxiv.org/abs/2103.00611">Rosenbluth separation of <i>dσ</i><sub>L</sub>/<i>dt</i> and <i>dσ</i><sub>T</sub>/<i>dt</i> in π<sup>0</sup> deeply virtual electroproduction from the proton</a><br>
-        <b>I. Korover</b>, R. G. Milner · arXiv:2103.00611</p>
-      </li>
-      <li>
-        <span class="year">2020</span>
-        <p><a href="https://arxiv.org/abs/2004.11221">Probing the core of the strong nuclear interaction</a><br>
-        A. Schmidt <i>et al.</i> (CLAS Collaboration) · Nature 578, 540</p>
-      </li>
-      <li>
-        <span class="year">2020</span>
-        <p><a href="https://arxiv.org/abs/2004.10339">The CLAS12 Backward Angle Neutron Detector (BAND)</a><br>
-        E. P. Segarra <i>et al.</i> · Nucl. Instrum. Meth. A 978, 164356</p>
-      </li>
-      <li>
-        <span class="year">2020</span>
-        <p><a href="https://arxiv.org/abs/2109.02076">Deeply virtual Compton scattering off the neutron</a><br>
-        M. Benali <i>et al.</i> · Nature Phys. 16, 191</p>
-      </li>
-      <li>
-        <span class="year">2019</span>
-        <p><a href="https://arxiv.org/abs/2004.12065">Modified structure of protons and neutrons in correlated pairs</a><br>
-        B. Schmookler <i>et al.</i> (CLAS Collaboration) · Nature 566, 354</p>
-      </li>
-      <li>
-        <span class="year">2017</span>
-        <p><a href="https://arxiv.org/abs/1611.09748">Nucleon-nucleon correlations, short-lived excitations, and the quarks within</a><br>
-        O. Hen, G. A. Miller, <b>E. Piasetzky</b>, L. B. Weinstein · Rev. Mod. Phys. 89, 045002</p>
-      </li>
-      <li>
-        <span class="year">2014</span>
-        <p><a href="https://arxiv.org/abs/1401.6138">Probing the repulsive core of the nucleon-nucleon interaction via the <sup>4</sup>He(<i>e</i>,<i>e′pN</i>) triple-coincidence reaction</a><br>
-        <b>I. Korover</b> <i>et al.</i> (Jefferson Lab Hall A Collaboration) · Phys. Rev. Lett. 113, 022501</p>
-      </li>
-    </ol>
-    <p>Full list on <a href="https://inspirehep.net/literature?q=a%20Korover%2C%20I&amp;sort=mostrecent">INSPIRE</a></p>
-    <!-- publications:end -->
-  </section>
-
-  <section id="contact" class="wrap contact">
     <div>
-      <h2>Join us</h2>
-      <p>Our projects run from detector design and simulation to data analysis and modelling. If you are a student or postdoc interested in working with us, write to Igor.</p>
-      <dl>
-        <dt>Email</dt><dd><a href="mailto:korover@tauex.tau.ac.il">korover@tauex.tau.ac.il</a></dd>
-        <dt>Phone</dt><dd><a href="tel:+97236405280">03-6405280</a></dd>
-        <dt>Office</dt><dd>Shenkar Physics Building, room 518<br>School of Physics and Astronomy<br>Tel Aviv University, Tel Aviv, Israel</dd>
-      </dl>
+      <h1 class="bar">Korover Lab - Experimental Nuclear Physics @ Tel Aviv University</h1>
+      <p class="justify">Welcome to the Korover Lab website. Here you can get to know the group, read about our research, and find our latest publications. We study how quarks and gluons build protons and neutrons, and what happens when two nucleons overlap inside a nucleus: at Jefferson Lab today, and at the Electron-Ion Collider next. Our projects run from detector design and simulation to data analysis and modelling.</p>
+      <p>Fully funded MSc and PhD positions are available: see <a href="join.html">Join Us</a>.</p>
+      <p class="intro-mail"><a href="mailto:korover@tauex.tau.ac.il">korover@tauex.tau.ac.il</a></p>
     </div>
-    <img src="assets/logo-woven.svg" alt="" width="200" height="200">
-  </section>
+  </div>
 
+  <section class="news">
+    <div class="wrap">
+      <h2 class="bar center">Group News</h2>
+      <ul>
+        <li><time datetime="2026-09-29">September 29, 2026</time><p>New paper on short-range correlated pairs from nucleon density profiles as a new probe of the nuclear equation of state <a href="https://arxiv.org/abs/2609.36733">available on the arXiv</a>.</p></li>
+        <li><time datetime="2026-06-05">June 5, 2026</time><p>New paper on short-range correlated pair formation and nuclear shell structure, from Hall C data, <a href="https://arxiv.org/abs/2606.07754">available on the arXiv</a>.</p></li>
+        <li><time datetime="2026-06-03">June 3, 2026</time><p>Our paper showing that nuclear shell structure governs short-range nucleon pairing is <a href="https://doi.org/10.1038/s41586-026-10616-2">published in Nature</a>. See the <a href="https://www.jlab.org/news/releases/nuclear-physicists-discover-new-rule-peppy-partner-picking">Jefferson Lab press release</a>.</p></li>
+        <li><time datetime="2026-01-14">January 14, 2026</time><p>&quot;Long range outlook for short-range correlations&quot; <a href="https://arxiv.org/abs/2601.09568">available on the arXiv</a>.</p></li>
+        <li><time datetime="2025-12-16">December 16, 2025</time><p>New paper on modeling short-range nucleon pair and triplet abundances in atomic nuclei <a href="https://arxiv.org/abs/2512.14447">available on the arXiv</a>. [Published in Phys. Rev. C]</p></li>
+        <li><time datetime="2025-10-24">October 24, 2025</time><p>Our proposal to probe nuclear gluon structure with threshold J/ψ photoproduction, Jefferson Lab experiment E12-25-002, is <a href="https://arxiv.org/abs/2510.22076">available on the arXiv</a>.</p></li>
+        <li><time datetime="2024">2024</time><p>Igor joins the School of Physics and Astronomy at Tel Aviv University, and the group is born.</p></li>
+      </ul>
+    </div>
+  </section>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <p><em>Korover</em> means basket maker. Ours holds nucleons.</p>
-    <p>© 2026 Korover Lab · Tel Aviv University</p>
-  </div>
-</footer>
+<script>
+  // Slideshow: plays every 6 s until paused or stepped through by hand.
+  const slides = document.querySelector(".slides");
+  const frame = slides.querySelector(".frame");
+  let imgs = frame.querySelectorAll("img");
+  const toggle = slides.querySelector(".toggle");
+  let at = 0, timer = null;
+  function show(n) {
+    imgs[at].classList.remove("on");
+    imgs[at].setAttribute("aria-hidden", "true");
+    at = (n + imgs.length) % imgs.length;
+    imgs[at].classList.add("on");
+    imgs[at].removeAttribute("aria-hidden");
+    slides.querySelector(".count").textContent = `${at + 1}/${imgs.length}`;
+  }
+  function play(on) {
+    clearInterval(timer);
+    timer = on ? setInterval(() => show(at + 1), 6000) : null;
+    toggle.textContent = on ? "Pause" : "Play";
+  }
+  function step() { play(false); show(at + 1); }
+  frame.addEventListener("click", step);
+  slides.querySelector(".next").addEventListener("click", step);
+  toggle.addEventListener("click", () => play(!timer));
+  addEventListener("load", () => {
+    const more = frame.querySelector("template");
+    frame.append(more.content);
+    more.remove();
+    imgs = frame.querySelectorAll("img");
+  });
+  play(!matchMedia("(prefers-reduced-motion: reduce)").matches);
+</script>
 
 </body>
 </html>
