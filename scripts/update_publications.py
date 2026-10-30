@@ -73,7 +73,7 @@ def render(articles):
             "      </li>"
         )
     return "\n".join(
-        f'    <h2 class="pub-year">({year or "undated"})</h2>\n    <ol class="pubs">\n' + "\n".join(items) + "\n    </ol>"
+        f'    <h2 class="pub-year">{year or "Undated"}</h2>\n    <ol class="pubs">\n' + "\n".join(items) + "\n    </ol>"
         for year, items in groups
     )
 

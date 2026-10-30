@@ -16,108 +16,79 @@
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+  <script src="site.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<header class="masthead">
+<header class="site-header">
   <div class="wrap">
-    <a href="index.html"><img src="assets/images/logo.jpg" alt="Korover Lab, home" width="174" height="174"></a>
-    <div>
-      <p class="site-title">Korover Lab</p>
-      <p class="tagline">Experimental Nuclear Physics @ Tel Aviv University</p>
-    </div>
-    <img class="emblem" src="assets/images/masthead-pair.jpg" alt="" width="174" height="174" loading="lazy">
+    <a class="brand" href="index.html"><img src="assets/images/logo.jpg" alt="" width="44" height="44"><span><b>Korover Lab</b><small>Tel Aviv University</small></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="site-nav" id="nav" aria-label="Main">
+      <a href="research.html">Research</a>
+      <a href="people.html">People</a>
+      <a href="publications.html">Publications</a>
+      <a href="press.html">Press</a>
+      <a href="join.html">Join Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="internal.html"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M4 7V5a4 4 0 1 1 8 0v2h.5A1.5 1.5 0 0 1 14 8.5v6a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-6A1.5 1.5 0 0 1 3.5 7H4Zm2 0h4V5a2 2 0 1 0-4 0v2Z"/></svg>Internal</a>
+    </nav>
   </div>
 </header>
 
-<nav class="site-nav">
-  <div class="wrap">
-    <a href="index.html" aria-current="page">Home</a>
-    <a href="people.html">People</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications</a>
-    <a href="press.html">Press</a>
-    <a href="join.html">Join Us</a>
-    <a href="contact.html">Contact us</a>
-  </div>
-</nav>
-
-<main>
-  <div class="wrap intro">
-    <figure class="slides">
-      <div class="frame">
-        <img class="on" src="assets/images/cebaf-aerial.jpg" alt="Jefferson Lab from the air" width="720" height="480" fetchpriority="high">
-        <template>
-          <img src="assets/images/hall-a.jpg" alt="Hall A at Jefferson Lab" width="720" height="480" aria-hidden="true">
-          <img src="assets/images/clas12.jpg" alt="The CLAS12 detector in Hall B" width="720" height="480" aria-hidden="true">
-          <img src="assets/images/hall-c.jpg" alt="The spectrometers of Hall C" width="720" height="480" aria-hidden="true">
-          <img src="assets/images/gluex.jpg" alt="The GlueX detector in Hall D" width="720" height="480" aria-hidden="true">
-          <img src="assets/images/eic-aerial.jpg" alt="The Electron-Ion Collider complex at Brookhaven" width="720" height="480" aria-hidden="true">
-          <img src="assets/images/eic-tunnel.jpg" alt="Cutaway rendering of the Electron-Ion Collider tunnel" width="720" height="480" aria-hidden="true">
-          <img src="assets/images/epic-model.jpg" alt="A model of the ePIC detector for the Electron-Ion Collider" width="720" height="480" aria-hidden="true">
-        </template>
+<main id="main">
+  <section class="wrap section" aria-label="About">
+    <div class="content">
+      <h1 class="home-title">Korover Lab</h1>
+      <p class="intro">We study how quarks and gluons build protons and neutrons, and what happens when two nucleons overlap inside a nucleus. We run experiments at Jefferson Lab and help build the Electron-Ion Collider, from detector design and simulation to data analysis and modelling.</p>
+      <div class="actions">
+        <a class="btn" href="research.html">Our research</a>
+        <a class="btn ghost" href="join.html">Join the group</a>
       </div>
-      <figcaption>
-        <button type="button" class="toggle">Pause</button>
-        <button type="button" class="next"><span class="sr-only">Next picture. Showing </span><span class="count">1/8</span></button>
-      </figcaption>
-    </figure>
-    <div>
-      <h1 class="bar">Korover Lab - Experimental Nuclear Physics @ Tel Aviv University</h1>
-      <p class="justify">Welcome to the Korover Lab website. Here you can get to know the group, read about our research, and find our latest publications. We study how quarks and gluons build protons and neutrons, and what happens when two nucleons overlap inside a nucleus: at Jefferson Lab today, and at the Electron-Ion Collider next. Our projects run from detector design and simulation to data analysis and modelling.</p>
-      <p>Fully funded MSc and PhD positions are available: see <a href="join.html">Join Us</a>.</p>
-      <p class="intro-mail"><a href="mailto:korover@tauex.tau.ac.il">korover@tauex.tau.ac.il</a></p>
     </div>
-  </div>
-
-  <section class="news">
-    <div class="wrap">
-      <h2 class="bar center">Group News</h2>
-      <ul>
-        <li><time datetime="2026-09-29">September 29, 2026</time><p>New paper on short-range correlated pairs from nucleon density profiles as a new probe of the nuclear equation of state <a href="https://arxiv.org/abs/2609.36733">available on the arXiv</a>.</p></li>
-        <li><time datetime="2026-06-05">June 5, 2026</time><p>New paper on short-range correlated pair formation and nuclear shell structure, from Hall C data, <a href="https://arxiv.org/abs/2606.07754">available on the arXiv</a>.</p></li>
-        <li><time datetime="2026-06-03">June 3, 2026</time><p>Our paper showing that nuclear shell structure governs short-range nucleon pairing is <a href="https://doi.org/10.1038/s41586-026-10616-2">published in Nature</a>. See the <a href="https://www.jlab.org/news/releases/nuclear-physicists-discover-new-rule-peppy-partner-picking">Jefferson Lab press release</a>.</p></li>
-        <li><time datetime="2026-01-14">January 14, 2026</time><p>&quot;Long range outlook for short-range correlations&quot; <a href="https://arxiv.org/abs/2601.09568">available on the arXiv</a>.</p></li>
-        <li><time datetime="2025-12-16">December 16, 2025</time><p>New paper on modeling short-range nucleon pair and triplet abundances in atomic nuclei <a href="https://arxiv.org/abs/2512.14447">available on the arXiv</a>. [Published in Phys. Rev. C]</p></li>
-        <li><time datetime="2025-10-24">October 24, 2025</time><p>Our proposal to probe nuclear gluon structure with threshold J/ψ photoproduction, Jefferson Lab experiment E12-25-002, is <a href="https://arxiv.org/abs/2510.22076">available on the arXiv</a>.</p></li>
+  </section>
+  <section class="wrap section" aria-label="News">
+    <div class="content">
+      <ul class="news">
+        <li><time datetime="2026-09-29">2026-09-29</time><p>New paper on short-range correlated pairs from nucleon density profiles as a new probe of the nuclear equation of state <a href="https://arxiv.org/abs/2609.36733">available on the arXiv</a>.</p></li>
+        <li><time datetime="2026-06-05">2026-06-05</time><p>New paper on short-range correlated pair formation and nuclear shell structure, from Hall C data, <a href="https://arxiv.org/abs/2606.07754">available on the arXiv</a>.</p></li>
+        <li><time datetime="2026-06-03">2026-06-03</time><p>Our paper showing that nuclear shell structure governs short-range nucleon pairing is <a href="https://doi.org/10.1038/s41586-026-10616-2">published in Nature</a>. See the <a href="https://www.jlab.org/news/releases/nuclear-physicists-discover-new-rule-peppy-partner-picking">Jefferson Lab press release</a>.</p></li>
+        <li><time datetime="2026-01-14">2026-01-14</time><p>&quot;Long range outlook for short-range correlations&quot; <a href="https://arxiv.org/abs/2601.09568">available on the arXiv</a>.</p></li>
+        <li><time datetime="2025-12-16">2025-12-16</time><p>New paper on modeling short-range nucleon pair and triplet abundances in atomic nuclei <a href="https://arxiv.org/abs/2512.14447">available on the arXiv</a>. [Published in Phys. Rev. C]</p></li>
+        <li><time datetime="2025-10-24">2025-10-24</time><p>Our proposal to probe nuclear gluon structure with threshold J/ψ photoproduction, Jefferson Lab experiment E12-25-002, is <a href="https://arxiv.org/abs/2510.22076">available on the arXiv</a>.</p></li>
         <li><time datetime="2024">2024</time><p>Igor joins the School of Physics and Astronomy at Tel Aviv University, and the group is born.</p></li>
       </ul>
     </div>
   </section>
 </main>
 
-<script>
-  // Slideshow: plays every 6 s until paused or stepped through by hand.
-  const slides = document.querySelector(".slides");
-  const frame = slides.querySelector(".frame");
-  let imgs = frame.querySelectorAll("img");
-  const toggle = slides.querySelector(".toggle");
-  let at = 0, timer = null;
-  function show(n) {
-    imgs[at].classList.remove("on");
-    imgs[at].setAttribute("aria-hidden", "true");
-    at = (n + imgs.length) % imgs.length;
-    imgs[at].classList.add("on");
-    imgs[at].removeAttribute("aria-hidden");
-    slides.querySelector(".count").textContent = `${at + 1}/${imgs.length}`;
-  }
-  function play(on) {
-    clearInterval(timer);
-    timer = on ? setInterval(() => show(at + 1), 6000) : null;
-    toggle.textContent = on ? "Pause" : "Play";
-  }
-  function step() { play(false); show(at + 1); }
-  frame.addEventListener("click", step);
-  slides.querySelector(".next").addEventListener("click", step);
-  toggle.addEventListener("click", () => play(!timer));
-  addEventListener("load", () => {
-    const more = frame.querySelector("template");
-    frame.append(more.content);
-    more.remove();
-    imgs = frame.querySelectorAll("img");
-  });
-  play(!matchMedia("(prefers-reduced-motion: reduce)").matches);
-</script>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <a href="https://en-exact-sciences.tau.ac.il/physics"><img class="tau" src="assets/images/tau-logo.png" alt="Tel Aviv University" width="190" height="108" loading="lazy"></a>
+      <p><span class="name">Korover Lab</span>School of Physics and Astronomy<br>Faculty of Exact Sciences, Tel Aviv University<br>Shenkar Physics Building, room 518</p>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="mailto:korover@tauex.tau.ac.il">korover@tauex.tau.ac.il</a></li>
+        <li><a href="tel:+97236405280">+972 3 640 5280</a></li>
+        <li><a href="join.html">Open positions</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Links</h2>
+      <ul>
+        <li><a href="https://english.tau.ac.il/profile/igorkoro">TAU profile</a></li>
+        <li><a href="https://inspirehep.net/literature?q=a%20Korover%2C%20I&amp;sort=mostrecent">INSPIRE</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>

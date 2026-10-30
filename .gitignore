@@ -1,2 +1,5 @@
 .DS_Store
 __pycache__/
+# Plain-text source of the internal page; only the encrypted internal.html is published.
+internal/content.html
+assets/unused/
