@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-124 -35 600 600" role="img" aria-label="Korover Lab">
+  <title>Korover Lab</title>
+  <defs>
+    <radialGradient id="grey" cx=".5" cy=".5" r=".55" fx=".36" fy=".3"><stop offset="0" stop-color="#f7f8fa"/><stop offset=".55" stop-color="#b3bbc6"/><stop offset="1" stop-color="#5f6a78"/></radialGradient>
+    <radialGradient id="greyBack" cx=".5" cy=".5" r=".55" fx=".36" fy=".3"><stop offset="0" stop-color="#dfe3e8"/><stop offset=".55" stop-color="#a0a9b5"/><stop offset="1" stop-color="#535e6c"/></radialGradient>
+    <radialGradient id="red" cx=".5" cy=".5" r=".55" fx=".36" fy=".3"><stop offset="0" stop-color="#ffb3a3"/><stop offset=".42" stop-color="#e5303a"/><stop offset="1" stop-color="#a5121f"/></radialGradient>
+    <radialGradient id="blue" cx=".5" cy=".5" r=".55" fx=".36" fy=".3"><stop offset="0" stop-color="#b5dcff"/><stop offset=".42" stop-color="#2479e6"/><stop offset="1" stop-color="#1450ad"/></radialGradient>
+    <radialGradient id="overlap" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#f3dcff"/><stop offset=".3" stop-color="#a04fe0"/><stop offset=".62" stop-color="#7a2bc2" stop-opacity=".85"/><stop offset="1" stop-color="#7a2bc2" stop-opacity="0"/></radialGradient>
+    <radialGradient id="lens" cx=".5" cy=".5" r=".62"><stop offset="0" stop-color="#d9b3ff"/><stop offset=".55" stop-color="#8a38d0"/><stop offset="1" stop-color="#5b1a9c"/></radialGradient>
+    <clipPath id="ghostS"><circle cx="182.8" cy="256.3" r="28"/></clipPath>
+    <linearGradient id="tailS" gradientUnits="userSpaceOnUse" x1="176.0" y1="265.0" x2="281.5" y2="130.0"><stop offset="0" stop-color="#e5303a" stop-opacity=".7"/><stop offset="1" stop-color="#e5303a" stop-opacity=".95"/></linearGradient>
+    <linearGradient id="tailP" gradientUnits="userSpaceOnUse" x1="176.0" y1="265.0" x2="289.3" y2="400.0"><stop offset="0" stop-color="#2479e6" stop-opacity=".7"/><stop offset="1" stop-color="#2479e6" stop-opacity=".95"/></linearGradient>
+  </defs>
+  <rect x="-124" y="-35" width="600" height="600" fill="#10304f"/>
+  <path d="M162.2 276.6L264.8 420.6L313.8 379.4L189.8 253.4Z" fill="url(#tailP)"/><path d="M190.2 276.1L306.7 149.7L256.3 110.3L161.8 253.9Z" fill="url(#tailS)"/>
+  <circle cx="176.0" cy="265.0" r="44" fill="url(#overlap)" opacity=".55"/>
+  <circle cx="183.1" cy="273.4" r="28" fill="url(#blue)"/><circle cx="182.8" cy="256.3" r="28" fill="url(#red)"/>
+  <circle cx="183.1" cy="273.4" r="28" fill="url(#lens)" clip-path="url(#ghostS)"/>
+  <circle cx="289.3" cy="400.0" r="40" fill="url(#blue)"/><circle cx="281.5" cy="130.0" r="40" fill="url(#red)"/>
+  <path d="M91.2 286.2C101.7 302.8 106.1 301.7 107.6 282.0C109.1 262.4 113.6 261.3 124.1 277.9C134.6 294.6 139.1 293.5 140.5 273.8C142.0 254.2 146.5 253.1 157.0 269.7" fill="none" stroke="#e8a010" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M56.3 440.0L64.0 292.9L53.4 90.0" fill="none" stroke="#ffffff" stroke-width="60" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M73.6 377.2L60.7 356.5L45.6 375.7M72.7 190.6L57.6 171.3L44.7 192.0" fill="none" stroke="#10304f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
