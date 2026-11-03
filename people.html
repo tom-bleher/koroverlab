@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
   <script src="site.js" defer></script>
 </head>
 <body>
@@ -40,9 +40,11 @@
   </div>
 </header>
 
-<h1 class="sr-only">People</h1>
-
 <main id="main">
+<div class="banner">
+  <img src="assets/images/art-emc-nucleons.jpg" alt="" width="1280" height="770">
+  <div class="wrap"><h1>People</h1></div>
+</div>
   <section class="wrap section" aria-label="Principal Investigator">
     <div class="content">
       <div class="person">
@@ -64,45 +66,40 @@
   <section class="wrap section" aria-label="Team">
     <div class="content">
       <div class="group">
-        <h2>Research Associates</h2>
-        <ul class="members">
-          <li><div><b>Prof. Eli Piasetzky</b><span>Professor Emeritus</span><a class="mail" href="mailto:hebrew520@gmail.com" title="hebrew520@gmail.com">Email</a></div></li>
-          <li><div><b>Erez Cohen</b><a class="mail" href="mailto:cohen.erez7@gmail.com" title="cohen.erez7@gmail.com">Email</a></div></li>
-        </ul>
-      </div>
-      <div class="group">
-        <h2>Postdoctoral Researchers</h2>
-        <ul class="members">
-          <li><div><b>Dr. Igor Parshkin</b><a class="mail" href="mailto:igorparshkin@tauex.tau.ac.il" title="igorparshkin@tauex.tau.ac.il">Email</a></div></li>
-        </ul>
-      </div>
-      <div class="group">
         <h2>Engineers</h2>
         <ul class="members">
-          <li><div><b>Avishay Mizrahi</b><span>Mechanical Engineer</span></div></li>
+          <li><span class="photo" aria-hidden="true">AM</span><div><b>Avishay Mizrahi</b><span>Mechanical Engineer</span><span>Projects: TBA</span></div></li>
         </ul>
       </div>
       <div class="group">
-        <h2>Graduate Students</h2>
+        <h2>PhD Students</h2>
         <ul class="members">
-          <li><div><b>Ron Wagner</b><span>PhD</span><a class="mail" href="mailto:rw.tavor111@gmail.com" title="rw.tavor111@gmail.com">Email</a></div></li>
-          <li><div><b>Nitzan Alaluf</b><span>MSc</span><a class="mail" href="mailto:nitzanalaluf@mail.tau.ac.il" title="nitzanalaluf@mail.tau.ac.il">Email</a></div></li>
-          <li><div><b>Ilay Wischnevsky Shlush</b><span>MSc</span><a class="mail" href="mailto:ilayw1@mail.tau.ac.il" title="ilayw1@mail.tau.ac.il">Email</a></div></li>
-          <li><div><b>Yuval Shalom Moalem</b><span>MSc</span><a class="mail" href="mailto:yuval.shalommoalem@mail.huji.ac.il" title="yuval.shalommoalem@mail.huji.ac.il">Email</a></div></li>
+          <li><span class="photo" aria-hidden="true">RW</span><div><b>Ron Wagner</b><a class="mail" href="mailto:rw.tavor111@gmail.com" title="rw.tavor111@gmail.com">Email</a><span>Projects: TBA</span></div></li>
+          <li><span class="photo" aria-hidden="true">IB</span><div><b>Igor Becker</b><a class="mail" href="mailto:igorparshkin@tauex.tau.ac.il" title="igorparshkin@tauex.tau.ac.il">Email</a><span>Projects: TBA</span></div></li>
+        </ul>
+      </div>
+      <div class="group">
+        <h2>MSc Students</h2>
+        <ul class="members">
+          <li><span class="photo" aria-hidden="true">NA</span><div><b>Nitzan Alaluf</b><a class="mail" href="mailto:nitzanalaluf@mail.tau.ac.il" title="nitzanalaluf@mail.tau.ac.il">Email</a><span>Projects: TBA</span></div></li>
+          <li><img src="assets/images/ilay-wischnevsky-shlush.jpg" alt="" width="228" height="228" loading="lazy"><div><b>Ilay Wischnevsky Shlush</b><a class="mail" href="mailto:ilayw1@mail.tau.ac.il" title="ilayw1@mail.tau.ac.il">Email</a><span>Projects: SRC</span></div></li>
+          <li><span class="photo" aria-hidden="true">YM</span><div><b>Yuval Shalom Moalem</b><a class="mail" href="mailto:yuval.shalommoalem@mail.huji.ac.il" title="yuval.shalommoalem@mail.huji.ac.il">Email</a><span>Projects: TBA</span></div></li>
+          <li><span class="photo" aria-hidden="true">YP</span><div><b>Yuval Pinhas</b><a class="mail" href="mailto:yuvalpinhas@mail.tau.ac.il" title="yuvalpinhas@mail.tau.ac.il">Email</a><span>Projects: TBA</span></div></li>
+          <li><span class="photo" aria-hidden="true">SY</span><div><b>Shai Yakobovich</b><a class="mail" href="mailto:shaiy@mail.tau.ac.il" title="shaiy@mail.tau.ac.il">Email</a><span>Projects: TBA</span></div></li>
         </ul>
       </div>
       <div class="group">
         <h2>Undergraduate Students</h2>
         <ul class="members">
-          <li><div><b>Tom Bleher</b></div></li>
+          <li><img src="assets/images/tom-bleher.jpg" alt="" width="180" height="180" loading="lazy"><div><b>Tom Bleher</b><span>Projects: EIC</span></div></li>
         </ul>
       </div>
       <div class="group">
-        <h2>Group Members</h2>
+        <h2>Research Associates</h2>
         <ul class="members">
-          <li><div><b>Sharon Beck</b><a class="mail" href="mailto:smtbeck@gmail.com" title="smtbeck@gmail.com">Email</a></div></li>
-          <li><div><b>Yuval Pinhas</b><a class="mail" href="mailto:yuvalpinhas@mail.tau.ac.il" title="yuvalpinhas@mail.tau.ac.il">Email</a></div></li>
-          <li><div><b>Shai Yakobovich</b><a class="mail" href="mailto:shaiy@mail.tau.ac.il" title="shaiy@mail.tau.ac.il">Email</a></div></li>
+          <li><img src="assets/images/eli-piasetzky.jpg" alt="" width="400" height="400" loading="lazy"><div><b>Prof. Eli Piasetzky</b><span>Professor Emeritus</span><a class="mail" href="mailto:hebrew520@gmail.com" title="hebrew520@gmail.com">Email</a><span>Projects: TBA</span></div></li>
+          <li><span class="photo" aria-hidden="true">EC</span><div><b>Erez Cohen</b><a class="mail" href="mailto:cohen.erez7@gmail.com" title="cohen.erez7@gmail.com">Email</a><span>Projects: TBA</span></div></li>
+          <li><span class="photo" aria-hidden="true">SB</span><div><b>Sharon Beck</b><a class="mail" href="mailto:smtbeck@gmail.com" title="smtbeck@gmail.com">Email</a><span>Projects: TBA</span></div></li>
         </ul>
       </div>
     </div>
