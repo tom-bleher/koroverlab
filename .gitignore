@@ -3,3 +3,5 @@ __pycache__/
 # Plain-text internal page and files; only the encrypted copies are published.
 internal/
 assets/unused/
+# Full-resolution originals of the media bank stay local; the site uses the web-ready copies.
+assets/media-bank/originals/
