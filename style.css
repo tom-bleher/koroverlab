@@ -53,10 +53,8 @@ a:hover { color: var(--navy); }
 main { flex: 1; }
 .site-header { position: sticky; top: 0; z-index: 10; background: #fff; border-bottom: 1px solid var(--line); }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; height: 4.5rem; }
-.brand { display: flex; align-items: center; gap: 0.8rem; color: var(--ink); text-decoration: none; }
-.brand img { width: 44px; height: 44px; }
-.brand span { display: grid; gap: 0.1rem; line-height: 1.1; }
-.brand b { font-size: 1.3rem; font-weight: 800; letter-spacing: -0.01em; }
+.brand { display: grid; gap: 0.25rem; color: var(--ink); text-decoration: none; }
+.brand img { width: 14rem; height: auto; }
 .brand small { font: 500 0.68rem var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
 .site-nav { display: flex; gap: 0.1rem; }
 .site-nav a { display: flex; align-items: center; gap: 0.35rem; padding: 0.4rem 0.65rem; border-bottom: 2px solid transparent; color: var(--ink); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; }
@@ -71,14 +69,9 @@ main { flex: 1; }
 .slides { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
 .slides::-webkit-scrollbar { display: none; }
 .slides img { flex: 0 0 100%; width: 100%; height: clamp(18rem, 44vw, 34rem); object-fit: cover; object-position: 50% 45%; scroll-snap-align: start; }
-.slide-controls { position: absolute; top: 1rem; right: 1rem; display: flex; gap: 0.4rem; }
-.slide-controls button { display: grid; place-items: center; width: 2.5rem; height: 2.5rem; padding: 0; border: 0; border-radius: 50%; background: rgb(10 31 54 / 0.72); color: #fff; cursor: pointer; }
-.slide-controls button:hover { background: var(--navy); }
-.slide-controls svg { width: 1rem; height: 1rem; }
-.slide-controls .play, .slide-controls [aria-pressed="true"] .pause { display: none; }
-.slide-controls [aria-pressed="true"] .play { display: block; }
 .hero-panel { position: relative; max-width: 46rem; margin: -9rem 0 0 -2.5rem; padding: 2.5rem 2.5rem 2.75rem; background: var(--navy); }
-.hero h1 { margin-bottom: 0.9rem; font-size: clamp(2.4rem, 5vw, 3.4rem); font-weight: 800; letter-spacing: -0.02em; color: #fff; }
+.hero h1 { margin-bottom: 1.1rem; }
+.hero h1 img { width: min(100%, 29rem); height: auto; }
 .hero .intro { max-width: 38rem; margin: 0; color: rgb(255 255 255 / 0.86); font-size: clamp(1.05rem, 1.5vw, 1.2rem); line-height: 1.6; }
 .hero .btn { background: #fff; color: var(--navy); }
 .hero .btn:hover { background: #dbe6f3; color: var(--navy); }
@@ -210,8 +203,7 @@ dl.contact dd { margin: 0; }
 @media (max-width: 34rem) {
   .wrap { padding-inline: 1rem; }
   .site-header .wrap { height: 4.25rem; }
-  .brand img { width: 40px; height: 40px; }
-  .brand b { font-size: 1.15rem; }
+  .brand img { width: 11rem; }
   .slides img { height: 15rem; }
   .members img, .members .photo { width: 5.5rem; height: 5.5rem; }
   .hero-panel { max-width: none; margin: 0 -1rem; padding: 1.75rem 1rem 2rem; }
