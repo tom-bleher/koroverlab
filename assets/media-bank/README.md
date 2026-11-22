@@ -17,13 +17,13 @@ Topics: src, emc, gluons, nucleon-3d, eic, experiments, tau. Figure numbers refe
 
 | Topic | Plots | Illustrations | Photos | Total |
 |---|---|---|---|---|
-| src | 32 | 11 | 7 | 50 |
+| src | 42 | 11 | 7 | 60 |
 | emc | 14 | 3 | 0 | 17 |
 | gluons | 8 | 3 | 6 | 17 |
-| nucleon-3d | 6 | 4 | 2 | 12 |
+| nucleon-3d | 8 | 4 | 2 | 14 |
 | eic | 2 | 16 | 18 | 36 |
 | experiments | 1 | 9 | 27 | 37 |
 | tau | 0 | 0 | 12 | 12 |
-| **all** | 63 | 46 | 72 | 181 |
+| **all** | 75 | 46 | 72 | 193 |
 
-Total size: 253 MB.
+Total size: 246 MB.
